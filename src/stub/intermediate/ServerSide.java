@@ -9,16 +9,25 @@ import util.Config;
 import java.io.IOException;
 import java.net.InetAddress;
 
+/**
+ * Stub for the server side of the intermediate.
+ */
 public class ServerSide extends StubClient implements ServerSideApi {
+    /**
+     * The inetAddress for the server side of the intermediate.
+     */
     private final InetAddress inetAddress;
+    /**
+     * The port for the server side of the intermediate.
+     */
     private final int port;
 
     /**
-     * The default stub client constructor.
+     * The default server side stub constructor.
      *
      * @param config      The application configuration file loader.
-     * @param inetAddress
-     * @param port
+     * @param inetAddress The inetAddress for the server side of the intermediate.
+     * @param port        The port for the server side of the intermediate.
      */
     public ServerSide(Config config, InetAddress inetAddress, int port) {
         super(config);

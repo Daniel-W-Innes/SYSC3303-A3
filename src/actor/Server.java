@@ -4,7 +4,6 @@ import actor.intermediate.ServerSideApi;
 import model.Message;
 import model.Request;
 import model.Response;
-import stub.StubClient;
 import stub.intermediate.ServerSide;
 import util.Config;
 
@@ -12,26 +11,25 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.util.logging.Logger;
 
-public class Server extends StubClient implements Runnable {
-    /**
-     * The application configuration file loader.
-     */
-    public final Config config;
+/**
+ * Receives requests and responses to them.
+ */
+public class Server implements Runnable {
     /**
      * The client's logger.
      */
     private final Logger logger;
+    /**
+     * The server side of the intermediate.
+     */
     private final ServerSideApi serverSide;
 
     /**
      * The default constructor for the server.
      *
-     * @param config     The application configuration file loader.
-     * @param serverSide
+     * @param serverSide The server side of the intermediate.
      */
-    public Server(Config config, ServerSideApi serverSide) {
-        super(config);
-        this.config = config;
+    public Server(ServerSideApi serverSide) {
         this.serverSide = serverSide;
         logger = Logger.getLogger(this.getClass().getName());
     }
@@ -44,7 +42,7 @@ public class Server extends StubClient implements Runnable {
      */
     public static void main(String[] args) throws IOException {
         Config config = new Config();
-        Server server = new Server(config, new ServerSide(config, InetAddress.getLocalHost(), config.getIntProperty("intermediateServerSidePort")));
+        Server server = new Server(new ServerSide(config, InetAddress.getLocalHost(), config.getIntProperty("intermediateServerSidePort")));
         server.run();
     }
 
@@ -53,10 +51,10 @@ public class Server extends StubClient implements Runnable {
     public void run() {
         try {
             while (!Thread.interrupted()) {
-                Message message = serverSide.send();
+                Message message = serverSide.send(); //ask intermediate for request
                 if (message instanceof Request) {
                     logger.info("Request: " + message);
-                    serverSide.send(new Response(((Request) message).isRead()));
+                    serverSide.send(new Response(((Request) message).isRead())); //respond to request
                 }
             }
         } catch (IOException | ClassNotFoundException e) {

@@ -6,6 +6,7 @@ import java.util.Objects;
 
 /**
  * The response object sent by the server.
+ * Response's attributes are mutable in order for it to be built from an object stream.
  */
 public class Response extends Message {
     /**
@@ -22,11 +23,23 @@ public class Response extends Message {
         this.read = read;
     }
 
+    /**
+     * Write Response to ObjectOutputStream using getEncoded.
+     *
+     * @param out The ObjectOutputStream.
+     * @throws IOException IOException from writing to ObjectOutputStream.
+     */
     @Serial
     private void writeObject(ObjectOutputStream out) throws IOException {
         out.write(getEncoded());
     }
 
+    /**
+     * Read a Response from ObjectInputStream.
+     *
+     * @param in The ObjectInputStream.
+     * @throws IOException IOException from read to ObjectInputStream.
+     */
     @Serial
     private void readObject(ObjectInputStream in) throws Exception {
         byte[] bytes = in.readAllBytes();
@@ -48,7 +61,6 @@ public class Response extends Message {
         output.write(read ? 0x3 : 0x4); //type byte, 3 for read, 4 for write
         output.write(0); //separating byte
         output.write(read ? 0x1 : 0x0); //type byte, 1 for read, 0 for write
-
         return output.toByteArray();
     }
 

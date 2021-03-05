@@ -5,7 +5,6 @@ import model.BadRequest;
 import model.Message;
 import model.Request;
 import model.Response;
-import stub.StubClient;
 import stub.intermediate.ClientSide;
 import util.Config;
 
@@ -19,7 +18,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.logging.Logger;
 
-public class Client extends StubClient implements Runnable {
+/**
+ * Sends requests and prints the response.
+ */
+public class Client implements Runnable {
     /**
      * The client's logger.
      */
@@ -28,26 +30,34 @@ public class Client extends StubClient implements Runnable {
      * The queue of requests to be sent on run.
      */
     private final Queue<Request> requests;
-
+    /**
+     * The client side of the intermediate.
+     */
     private final ClientSideApi clientSide;
+    /**
+     * The application configuration file loader.
+     */
+    private final Config config;
 
     /**
      * Create a client to send requests from requests queue.
      *
-     * @param config   The application configuration file loader.
-     * @param requests The requests to send.
+     * @param config     The application configuration file loader.
+     * @param clientSide The client side of the intermediate.
+     * @param requests   The requests to send.
      */
     public Client(Config config, ClientSideApi clientSide, Queue<Request> requests) {
-        super(config);
         logger = Logger.getLogger(this.getClass().getName());
         this.requests = requests;
         this.clientSide = clientSide;
+        this.config = config;
     }
 
     /**
      * Create a client to send default requests.
      *
-     * @param config The application configuration.
+     * @param config     The application configuration.
+     * @param clientSide The client side of the intermediate.
      */
     public Client(Config config, ClientSideApi clientSide) {
         this(config, clientSide, getDefaultRequests());
@@ -90,12 +100,12 @@ public class Client extends StubClient implements Runnable {
         Thread thread = new Thread(() -> {
             try {
                 while (!Thread.interrupted()) {
-                    Message message = clientSide.send();
+                    Message message = clientSide.send();  //ask intermediate for response
                     if (message instanceof Response) {
                         logger.info("Response: " + message);
-                        countDownLatch.countDown();
+                        countDownLatch.countDown(); //track response is received
                         if (countDownLatch.getCount() == 0) {
-                            break;
+                            break; //Stop listening for more responses after enough have been received
                         }
                     }
                 }
@@ -106,15 +116,19 @@ public class Client extends StubClient implements Runnable {
         thread.start();
         try {
             for (Request request : requests) {
+                //Handle interrupt by interrupting the receiving thread and stop sending requests
                 if (Thread.interrupted()) {
                     thread.interrupt();
                     break;
                 } else {
                     logger.info("sending: " + request);
+                    //send request
                     clientSide.send(request);
                 }
             }
+            // wait to receive responses
             if (!countDownLatch.await(config.getIntProperty("timeout"), TimeUnit.MILLISECONDS)) {
+                //using run time exception to avoid error handling inside runnable
                 throw new UndeclaredThrowableException(new TimeoutException());
             }
         } catch (IOException | ClassNotFoundException | InterruptedException e) {

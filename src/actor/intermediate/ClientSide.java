@@ -5,7 +5,6 @@ import model.Message;
 import model.Request;
 import model.Response;
 import stub.StubServer;
-import util.Config;
 
 import java.io.IOException;
 import java.net.DatagramSocket;
@@ -13,13 +12,29 @@ import java.net.SocketException;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * The client side thread In charge of listening for and responding to request from the server.
+ */
 public class ClientSide extends Thread implements ClientSideApi {
+    /**
+     * The intermediate.
+     */
     private final Intermediate intermediate;
+    /**
+     * The socket to receive with.
+     */
     private final DatagramSocket socket;
 
-    public ClientSide(Config config, Intermediate intermediate) throws SocketException {
+    /**
+     * The default intermediate client side constructor.
+     *
+     * @param port         The port for the client side.
+     * @param intermediate The intermediate.
+     * @throws SocketException If the the client side fails to bind the socket.
+     */
+    public ClientSide(int port, Intermediate intermediate) throws SocketException {
         this.intermediate = intermediate;
-        socket = new DatagramSocket(config.getIntProperty("intermediateClientSidePort"));
+        socket = new DatagramSocket(port);
     }
 
     @Override

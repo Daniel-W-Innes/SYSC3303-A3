@@ -6,6 +6,7 @@ import java.util.Objects;
 
 /**
  * The request object sent by client containing information specified in the outline.
+ * Request's attributes are mutable in order for it to be built from an object stream.
  */
 public class Request extends Message {
     /**
@@ -34,36 +35,47 @@ public class Request extends Message {
         this.mode = mode;
     }
 
-    @Serial
-    private void writeObject(ObjectOutputStream out) throws IOException {
-        out.write(getEncoded());
-    }
-
-    @Serial
-    private void readObject(ObjectInputStream in) throws Exception {
-        Builder builder = fromEncoded(in.readAllBytes());
-        this.read = builder.read;
-        this.filename = builder.filename;
-        this.mode = builder.mode;
-    }
-
-
     /**
-     * A secondary constructor to create a request object from request bytes.
+     * Parse request from bytes.
      * See getEncoded for the encoding schema.
      *
      * @param bytes The byte encoded request object.
      * @return The request object constructed.
      * @throws Exception If bytes are not from a request object.
      */
-    public static Builder fromEncoded(byte[] bytes) throws Exception {
-        //create a builder for parsing byte encoded requests
-        Builder builder = new Builder();
+    public static Parser fromEncoded(byte[] bytes) throws Exception {
+        //create a parser for parsing byte encoded requests
+        Parser parser = new Parser();
         for (byte b : bytes) {
             //feed the parser the bytes one by one
-            builder.getState().handle(b);
+            parser.getState().handle(b);
         }
-        return builder;
+        return parser;
+    }
+
+    /**
+     * Write Request to ObjectOutputStream using getEncoded.
+     *
+     * @param out The ObjectOutputStream.
+     * @throws IOException IOException from writing to ObjectOutputStream.
+     */
+    @Serial
+    private void writeObject(ObjectOutputStream out) throws IOException {
+        out.write(getEncoded());
+    }
+
+    /**
+     * Read a Response from ObjectInputStream.
+     *
+     * @param in The ObjectInputStream.
+     * @throws IOException IOException from read to ObjectInputStream.
+     */
+    @Serial
+    private void readObject(ObjectInputStream in) throws Exception {
+        Parser parser = fromEncoded(in.readAllBytes());
+        this.read = parser.read;
+        this.filename = parser.filename;
+        this.mode = parser.mode;
     }
 
     /**
@@ -126,9 +138,10 @@ public class Request extends Message {
     }
 
     /**
-     * The builder for request objects.
+     * The Parser for request objects.
+     * This is not really necessary due to the mutability of the base object but it encapsulates the parser state.
      */
-    public static class Builder {
+    public static class Parser {
         /**
          * Whether to read or write from the file.
          */
@@ -147,9 +160,9 @@ public class Request extends Message {
         private State state;
 
         /**
-         * The default constructor for the request object builder.
+         * The default constructor for the request object parser.
          */
-        public Builder() {
+        public Parser() {
             state = new InitialState(this);
         }
 
@@ -180,18 +193,6 @@ public class Request extends Message {
             this.mode = mode;
         }
 
-        /**
-         * Build request object from the parameters of the builder.
-         *
-         * @return The request object built.
-         * @throws Exception If not all parameters are set.
-         */
-        public Request build() throws Exception {
-            if (filename == null || mode == null) {
-                throw new Exception();
-            }
-            return new Request(read, filename, mode);
-        }
 
         /**
          * Get the current state of the parser.
@@ -218,17 +219,17 @@ public class Request extends Message {
  */
 abstract class State {
     /**
-     * The request builder.
+     * The request parser.
      */
-    protected final Request.Builder builder;
+    protected final Request.Parser parser;
 
     /**
-     * The default state constructor. This needs the builder so that it can store parameters across multiple states.
+     * The default state constructor. This needs the parser so that it can store parameters across multiple states.
      *
-     * @param builder The request builder.
+     * @param parser The request parser.
      */
-    protected State(Request.Builder builder) {
-        this.builder = builder;
+    protected State(Request.Parser parser) {
+        this.parser = parser;
     }
 
     /**
@@ -244,8 +245,8 @@ abstract class State {
  * The initial state of the parser.
  */
 class InitialState extends State {
-    public InitialState(Request.Builder builder) {
-        super(builder);
+    public InitialState(Request.Parser parser) {
+        super(parser);
     }
 
     @Override
@@ -254,7 +255,7 @@ class InitialState extends State {
         if (b != 0) {
             throw new Exception();
         } else {
-            builder.setState(new TypeState(builder)
+            parser.setState(new TypeState(parser)
             );
         }
     }
@@ -264,8 +265,8 @@ class InitialState extends State {
  * Decode if the request is read or write.
  */
 class TypeState extends State {
-    protected TypeState(Request.Builder builder) {
-        super(builder);
+    protected TypeState(Request.Parser parser) {
+        super(parser);
     }
 
     @Override
@@ -274,10 +275,10 @@ class TypeState extends State {
         if (b != 1 && b != 2) {
             throw new Exception();
         }
-        //set the read parameter in the builder
-        builder.setRead(b == 2);
+        //set the read parameter in the parser
+        parser.setRead(b == 2);
         //set the next state to decode filename
-        builder.setState(new FilenameState(builder));
+        parser.setState(new FilenameState(parser));
     }
 }
 
@@ -290,13 +291,13 @@ abstract class StringState extends State {
      */
     private final ByteArrayOutputStream output;
 
-    protected StringState(Request.Builder builder) {
-        super(builder);
+    protected StringState(Request.Parser parser) {
+        super(parser);
         output = new ByteArrayOutputStream();
     }
 
     /**
-     * Move to next state and set the parameter in the builder.
+     * Move to next state and set the parameter in the parser.
      *
      * @param output The string parsed by the StringState.
      */
@@ -318,16 +319,16 @@ abstract class StringState extends State {
  * The state for decoding the filename.
  */
 class FilenameState extends StringState {
-    protected FilenameState(Request.Builder builder) {
-        super(builder);
+    protected FilenameState(Request.Parser parser) {
+        super(parser);
     }
 
     @Override
     protected void nextState(String output) {
-        //set the filename parameter in the builder
-        builder.setFilename(output);
+        //set the filename parameter in the parser
+        parser.setFilename(output);
         //set the next state to decode mode
-        builder.setState(new ModeState(builder));
+        parser.setState(new ModeState(parser));
     }
 }
 
@@ -335,16 +336,16 @@ class FilenameState extends StringState {
  * The state for decoding the mode.
  */
 class ModeState extends StringState {
-    protected ModeState(Request.Builder builder) {
-        super(builder);
+    protected ModeState(Request.Parser parser) {
+        super(parser);
     }
 
     @Override
     protected void nextState(String output) {
-        //set the mode parameter in the builder
-        builder.setMode(output);
+        //set the mode parameter in the parser
+        parser.setMode(output);
         //set the next state to end
-        builder.setState(new EndState(builder));
+        parser.setState(new EndState(parser));
     }
 }
 
@@ -352,8 +353,8 @@ class ModeState extends StringState {
  * The state for when parsing is done, ignoring all remaining bytes.
  */
 class EndState extends State {
-    protected EndState(Request.Builder builder) {
-        super(builder);
+    protected EndState(Request.Parser parser) {
+        super(parser);
     }
 
     @Override
