@@ -4,6 +4,7 @@ import model.Request;
 import model.Response;
 import util.Config;
 
+import java.net.SocketException;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
@@ -35,17 +36,15 @@ public class Intermediate {
         return Optional.ofNullable(responses.poll());
     }
 
-    public Thread runClientSide() {
+    public Thread runClientSide() throws SocketException {
         ClientSide clientSide = new ClientSide(config, this);
-        Thread thread = new Thread(clientSide);
-        thread.start();
-        return thread;
+        clientSide.start();
+        return clientSide;
     }
 
-    public Thread runServerSide() {
+    public Thread runServerSide() throws SocketException {
         ServerSide serverSide = new ServerSide(config, this);
-        Thread thread = new Thread(serverSide);
-        thread.start();
-        return thread;
+        serverSide.start();
+        return serverSide;
     }
 }

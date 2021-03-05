@@ -8,16 +8,18 @@ import stub.StubServer;
 import util.Config;
 
 import java.io.IOException;
+import java.net.DatagramSocket;
+import java.net.SocketException;
 import java.util.Map;
 import java.util.Optional;
 
-public class ServerSide implements Runnable, ServerSideApi {
+public class ServerSide extends Thread implements ServerSideApi {
     private final Intermediate intermediate;
-    private final Config config;
+    private final DatagramSocket socket;
 
-    public ServerSide(Config config, Intermediate intermediate) {
-        this.config = config;
+    public ServerSide(Config config, Intermediate intermediate) throws SocketException {
         this.intermediate = intermediate;
+        socket = new DatagramSocket(config.getIntProperty("intermediateServerSidePort"));
     }
 
     @Override
@@ -38,7 +40,7 @@ public class ServerSide implements Runnable, ServerSideApi {
     @Override
     public void run() {
         try {
-            StubServer.receiveAsync(config.getIntProperty("intermediateServerSidePort"), 1024, Map.of(
+            StubServer.receiveAsync(socket, 1024, Map.of(
                     1, (input) -> {
                         send((Response) input.get(0));
                         return new AckMessage();
@@ -47,5 +49,11 @@ public class ServerSide implements Runnable, ServerSideApi {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void interrupt() {
+        super.interrupt();
+        socket.close();
     }
 }

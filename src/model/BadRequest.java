@@ -21,7 +21,7 @@ public class BadRequest extends Request {
      *
      * @return An array of garbage bytes.
      */
-    public byte[] getEncoded(int maxMessageSize) {
+    public byte[] getEncoded() {
         return new byte[]{1};
     }
 }

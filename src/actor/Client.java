@@ -1,6 +1,7 @@
 package actor;
 
 import actor.intermediate.ClientSideApi;
+import model.BadRequest;
 import model.Message;
 import model.Request;
 import model.Response;
@@ -60,12 +61,12 @@ public class Client extends StubClient implements Runnable {
      */
     public static Queue<Request> getDefaultRequests() {
         Queue<Request> requests = new LinkedList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i <= 5; i++) {
             requests.add(new Request(true, "filename " + i, "mode"));
             requests.add(new Request(false, "filename " + i, "mode"));
         }
         //add a bad request to the end of the queue
-        requests.add(new Request(true, "badFilename", "badMode"));
+        requests.add(new BadRequest(true, "badFilename", "badMode"));
         return requests;
     }
 
@@ -93,6 +94,9 @@ public class Client extends StubClient implements Runnable {
                     if (message instanceof Response) {
                         logger.info("Response: " + message);
                         countDownLatch.countDown();
+                        if (countDownLatch.getCount() == 0) {
+                            break;
+                        }
                     }
                 }
             } catch (IOException | ClassNotFoundException e) {
@@ -110,7 +114,7 @@ public class Client extends StubClient implements Runnable {
                     clientSide.send(request);
                 }
             }
-            if (!countDownLatch.await(config.getIntProperty("timeout"), TimeUnit.SECONDS)) {
+            if (!countDownLatch.await(config.getIntProperty("timeout"), TimeUnit.MILLISECONDS)) {
                 throw new UndeclaredThrowableException(new TimeoutException());
             }
         } catch (IOException | ClassNotFoundException | InterruptedException e) {

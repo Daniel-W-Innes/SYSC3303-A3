@@ -22,6 +22,10 @@ public class Main {
             clientThread.join();
         } catch (InterruptedException ignored) {
         }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ignored) {
+        }
         intermediateClientSideThread.interrupt();
         serverThread.interrupt();
         intermediateServerSideThread.interrupt();

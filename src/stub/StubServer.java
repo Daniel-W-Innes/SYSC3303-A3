@@ -7,6 +7,7 @@ import java.io.*;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.SocketException;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
@@ -27,17 +28,16 @@ public class StubServer {
      * For a function with one argument, the callback will be called with a list of length one.
      * For void functions, the callback should return AckMessage.
      *
-     * @param port           The port number to bind to.
+     * @param datagramSocket The port number to bind to.
      * @param maxMessageSize The maximum number of bytes for a message.
      * @param callbacks      The function number mapped to the sever callback function.
      * @throws IOException IOException is thrown if the server fails to receive or bind to the port.
      * @see model.AckMessage
      */
-    public static void receiveAsync(int port, int maxMessageSize, Map<Integer, Function<List<Serializable>, Serializable>> callbacks) throws IOException {
+    public static void receiveAsync(DatagramSocket datagramSocket, int maxMessageSize, Map<Integer, Function<List<Serializable>, Serializable>> callbacks) throws IOException {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        //using try-with-resources to close the datagram socket
-        try (DatagramSocket datagramSocket = new DatagramSocket(port)) {
+        try {
             while (!Thread.interrupted()) { //loop until the thread is interrupted
                 //reset buff between requests
                 byte[] buff = new byte[maxMessageSize];
@@ -49,6 +49,12 @@ public class StubServer {
                 //handle request
                 executorService.submit(() -> handleMessage(datagramPacket.getAddress(), datagramPacket.getPort(), datagramPacket.getData(), callbacks));
             }
+        } catch (SocketException e) {
+            if (!Thread.interrupted()){
+                throw e;
+            }
+        } finally {
+            executorService.shutdown();
         }
     }
 

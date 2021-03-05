@@ -51,7 +51,6 @@ public class Server extends StubClient implements Runnable {
 
     @Override
     public void run() {
-
         try {
             while (!Thread.interrupted()) {
                 Message message = serverSide.send();

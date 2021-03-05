@@ -7,7 +7,6 @@ import java.io.*;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import java.net.SocketTimeoutException;
 import java.util.List;
 
 /**
@@ -144,13 +143,7 @@ public abstract class StubClient {
         datagramSocket.send(new DatagramPacket(data, data.length, inetAddress, port));
 
         //receive response
-        try {
-            datagramSocket.receive(datagramPacket);
-        }catch (SocketTimeoutException e){
-            //send request
-            datagramSocket.send(new DatagramPacket(data, data.length, inetAddress, port));
-
-        }
+        datagramSocket.receive(datagramPacket);
         return buff;
     }
 }
