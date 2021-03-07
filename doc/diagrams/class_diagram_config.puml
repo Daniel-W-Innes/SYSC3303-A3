@@ -1,0 +1,10 @@
+@startuml
+class util.Config{
+ {static} - String CONFIG_FILE_NAME
+ - Properties properties
+ + Config()
+ + String getProperty(String key)
+ + int getIntProperty(String key)
+ + Float getFloatProperty(String key)
+}
+@enduml

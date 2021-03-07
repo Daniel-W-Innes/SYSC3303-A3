@@ -1,0 +1,130 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam style strictuml
+
+actor User
+participant Main
+box Client #LightGreen
+participant actor.Client as Client
+participant stub.intermediate.ClientSide as sic
+end box
+box Intermediate #LightBlue
+participant actor.intermediate.ClientSide as aic
+participant actor.intermediate.Intermediate as Intermediate
+participant actor.intermediate.ServerSide as ais
+end box
+box Server #LightCoral
+participant stub.intermediate.ServerSide as sis
+participant actor.Server as Server
+end box
+
+autonumber
+
+
+== Initialization ==
+User ->> Main ++: main()
+Main -> Intermediate **: Constructor
+
+Main -> Intermediate ++: runServerSide()
+Intermediate -> aic **: Constructor
+Intermediate ->> aic: start()
+activate aic
+Intermediate --> Main
+deactivate Intermediate
+
+Main -> Intermediate ++: runClientSide()
+Intermediate -> ais **: Constructor
+Intermediate ->> ais : start()
+activate ais
+Intermediate --> Main
+deactivate Intermediate
+
+Main -> sis **: Constructor
+Main -> Server **: Constructor
+
+Main -> sic **: Constructor
+Main -> Client **: Constructor
+
+Main ->> Server: start()
+activate Server
+
+Main ->> Client: start()
+activate Client
+
+Main -> Client: join()
+deactivate Main
+
+== Steady State ==
+
+par Client sending requests
+   loop for request in requests
+        Client -> sic ++: send(request)
+        sic -[#0000FF]>> aic: <<UDP>> send(request)
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send(request)
+        aic -> Intermediate ++: addRequest(request)
+        return
+        aic -[#0000FF]>> sic: <<UDP>> ack
+        deactivate aic
+        return
+   end
+
+  else Client requesting responses
+  loop Until interrupted
+        Client -> sic ++: send()
+        sic -[#0000FF]>> aic: <<UDP>> send()
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send()
+        aic -> Intermediate ++: getResponse()
+        return
+        aic -[#0000FF]>> sic: <<UDP>> message
+        deactivate aic
+        return message
+  end
+
+  else Server requesting requests and sending responses
+  loop Until interrupt
+        Server -> sis ++: send()
+        sis -[#0000FF]>> ais: <<UDP>> send()
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send()
+        ais -> Intermediate ++: getRequest()
+        return
+        ais -[#0000FF]>> sis: <<UDP>> message
+        deactivate ais
+        return message
+        Server -> sis ++: send(response)
+        sis -[#0000FF]>> ais: <<UDP>> send(response)
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send(responses)
+        ais -> Intermediate ++: addResponse(response)
+        return
+        ais -[#0000FF]>> sis: <<UDP>> ack
+        deactivate ais
+        return
+    end
+end
+
+== Termination ==
+
+Client --> Main
+deactivate Client
+activate Main
+
+Main ->> aic: interrupt()
+deactivate aic
+
+Main ->> Server: interrupt()
+deactivate Server
+
+Main ->> ais: interrupt()
+deactivate ais
+
+deactivate Main
+
+@enduml

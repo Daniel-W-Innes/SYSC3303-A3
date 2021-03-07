@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="190.35px" preserveAspectRatio="none" style="width:306px;height:190px;" version="1.1" viewBox="0 0 306 190" width="306.45px" zoomAndPan="magnify"><defs><filter height="300%" id="f1n2wrzwbd28ge" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.7"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.4" dy="5.4" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[25978a4fff2e3f143e96a46d7bb4290d]
+cluster actor.intermediate--><polygon fill="#FFFFFF" filter="url(#f1n2wrzwbd28ge)" points="21.6,8.1,203.85,8.1,213.3,39.9727,283.5,39.9727,283.5,180.9,21.6,180.9,21.6,8.1" style="stroke:#000000;stroke-width:2.0250000000000004;"/><line style="stroke:#000000;stroke-width:2.0250000000000004;" x1="21.6" x2="213.3" y1="39.9727" y2="39.9727"/><text fill="#000000" font-family="sans-serif" font-size="18.9" font-weight="bold" lengthAdjust="spacing" textLength="174.15" x="27" y="30.4198">actor.intermediate</text><!--MD5=[835cf35f9f779e49c9359fdf76690ac7]
+class actor.intermediate.ClientSideApi--><rect codeLine="3" fill="#FEFECE" filter="url(#f1n2wrzwbd28ge)" height="102.157" id="actor.intermediate.ClientSideApi" style="stroke:#A80036;stroke-width:2.0250000000000004;" width="217.35" x="43.875" y="56.7"/><ellipse cx="96.93" cy="78.3" fill="#B4A7E5" rx="14.85" ry="14.85" style="stroke:#A80036;stroke-width:1.35;"/><path d="M98.28,74.25 L98.28,82.35 L100.98,82.35 L101.6339,82.35 L102.33,83.1938 L102.33,83.7 L102.33,84.2063 L101.6339,85.05 L100.98,85.05 L92.88,85.05 L92.2261,85.05 L91.53,84.2063 L91.53,83.7 L91.53,83.1938 L92.2261,82.35 L92.88,82.35 L95.58,82.35 L95.58,74.25 L92.88,74.25 L92.2261,74.25 L91.53,73.4063 L91.53,72.9 L91.53,72.3938 L92.2261,71.55 L92.88,71.55 L100.98,71.55 L101.6339,71.55 L102.33,72.3938 L102.33,72.9 L102.33,73.4063 L101.6339,74.25 L100.98,74.25 L98.28,74.25 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="16.2" font-style="italic" lengthAdjust="spacing" textLength="101.25" x="123.12" y="84.9287">ClientSideApi</text><line style="stroke:#A80036;stroke-width:2.0250000000000004;" x1="45.225" x2="259.875" y1="99.9" y2="99.9"/><line style="stroke:#A80036;stroke-width:2.0250000000000004;" x1="45.225" x2="259.875" y1="110.7" y2="110.7"/><ellipse cx="58.725" cy="125.55" fill="#84BE84" rx="4.05" ry="4.05" style="stroke:#038048;stroke-width:1.35;"/><text fill="#000000" font-family="sans-serif" font-size="14.85" lengthAdjust="spacing" textLength="182.25" x="70.875" y="131.5156">void send(Request request)</text><ellipse cx="58.725" cy="144.2285" fill="#84BE84" rx="4.05" ry="4.05" style="stroke:#038048;stroke-width:1.35;"/><text fill="#000000" font-family="sans-serif" font-size="14.85" lengthAdjust="spacing" textLength="106.65" x="70.875" y="150.1941">Message send()</text><!--MD5=[ebd2248b3647585f0318e67867add016]
+@startuml
+'https://plantuml.com/class-diagram
+
+interface actor.intermediate.ClientSideApi{
+    + void send(Request request)
+    + Message send()
+}
+
+@enduml
+
+@startuml
+
+interface actor.intermediate.ClientSideApi{
+    + void send(Request request)
+    + Message send()
+}
+
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 02:55:08 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

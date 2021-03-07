@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+!include class_diagram_intermediate.puml
+!include class_diagram_parser.puml
+!include class_diagram_client.puml
+!include class_diagram_server.puml
+!include class_diagram_config.puml
+!include class_diagram_Response.puml
+
+class Main{
+    {static} + void main(String[] args)
+}
+
+Main ..> util.Config: "<<create>>"
+Main ..> actor.intermediate.Intermediate: "<<create>>"
+Main ..> stub.intermediate.ServerSide: "<<create>>"
+Main ..> stub.intermediate.ClientSide: "<<create>>"
+Main ..> actor.Server: "<<create>>"
+Main ..> actor.Client: "<<create>>"
+
+
+@enduml

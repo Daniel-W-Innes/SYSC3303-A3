@@ -5,6 +5,7 @@ import model.Message;
 import model.Request;
 import model.Response;
 import stub.StubServer;
+import util.Config;
 
 import java.io.IOException;
 import java.net.DatagramSocket;
@@ -22,6 +23,10 @@ public class ServerSide extends Thread implements ServerSideApi {
      */
     private final Intermediate intermediate;
     /**
+     * The application configuration file loader.
+     */
+    private final Config config;
+    /**
      * The socket to receive with.
      */
     private final DatagramSocket socket;
@@ -29,13 +34,14 @@ public class ServerSide extends Thread implements ServerSideApi {
     /**
      * The default intermediate server side constructor.
      *
-     * @param port         The port for the server side.
+     * @param config       The application configuration file loader.
      * @param intermediate The intermediate.
      * @throws SocketException If the the server side fails to bind the socket.
      */
-    public ServerSide(int port, Intermediate intermediate) throws SocketException {
+    public ServerSide(Config config, Intermediate intermediate) throws SocketException {
+        this.config = config;
         this.intermediate = intermediate;
-        socket = new DatagramSocket(port);
+        socket = new DatagramSocket(this.config.getIntProperty("intermediateServerSidePort"));
     }
 
     @Override
@@ -56,7 +62,7 @@ public class ServerSide extends Thread implements ServerSideApi {
     @Override
     public void run() {
         try {
-            StubServer.receiveAsync(socket, 1024, Map.of(
+            StubServer.receiveAsync(socket, config.getIntProperty("numHandlerThreads"), config.getIntProperty("maxMessageSize"), Map.of(
                     1, (input) -> {
                         send((Response) input.get(0));
                         return new AckMessage();

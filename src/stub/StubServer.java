@@ -35,9 +35,9 @@ public class StubServer {
      * @throws IOException IOException is thrown if the server fails to receive or bind to the port.
      * @see model.AckMessage
      */
-    public static void receiveAsync(DatagramSocket datagramSocket, int maxMessageSize, Map<Integer, Function<List<Serializable>, Serializable>> callbacks) throws IOException {
+    public static void receiveAsync(DatagramSocket datagramSocket, int numHandlerThreads, int maxMessageSize, Map<Integer, Function<List<Serializable>, Serializable>> callbacks) throws IOException {
         //use a thread pool to handle request and avoid blocking receive
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ExecutorService executorService = Executors.newFixedThreadPool(numHandlerThreads);
 
         try {
             while (!Thread.interrupted()) { //loop until the thread is interrupted

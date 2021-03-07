@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class model.Response{
+ - boolean read
+ + Response(boolean read)
+ + byte[] getEncoded()
+ + void writeObject(ObjectOutputStream out)
+ + void readObject(ObjectInputStream in)
+ + String toString()
+ + boolean equals(Object o)
+ + int hashCode()
+}
+
+@enduml

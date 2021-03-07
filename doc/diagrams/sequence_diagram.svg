@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
+     height="3307.5px" preserveAspectRatio="none" style="width:2217px;height:3307px;" version="1.1"
+     viewBox="0 0 2217 3307" width="2217px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <rect fill="#90EE90" height="3279.2695" style="stroke:#A80036;stroke-width:1.5;" width="442.5" x="305.25"
+              y="9"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="55.5" x="495.75" y="29.2427">Client
+        </text>
+        <rect fill="#ADD8E6" height="3279.2695" style="stroke:#A80036;stroke-width:1.5;" width="954" x="750.75" y="9"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="121.5" x="1164" y="29.2427">Intermediate
+        </text>
+        <rect fill="#F08080" height="3279.2695" style="stroke:#A80036;stroke-width:1.5;" width="460.5" x="1707.75"
+              y="9"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="63" x="1903.5" y="29.2427">Server
+        </text>
+        <rect fill="#FFFFFF" height="857.1445" style="stroke:#A80036;stroke-width:1.5;" width="15" x="132.75"
+              y="243.4688"/>
+        <rect fill="#FFFFFF" height="136.582" style="stroke:#A80036;stroke-width:1.5;" width="15" x="132.75"
+              y="3133.6875"/>
+        <rect fill="#FFFFFF" height="2078.6016" style="stroke:#A80036;stroke-width:1.5;" width="15" x="368.25"
+              y="1055.0859"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="591"
+              y="1288.7227"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="591"
+              y="1764.2227"/>
+        <rect fill="#FFFFFF" height="2716.8633" style="stroke:#A80036;stroke-width:1.5;" width="15" x="896.25"
+              y="462.3516"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="903.75"
+              y="1391.7773"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="903.75"
+              y="1867.2773"/>
+        <rect fill="#FFFFFF" height="154.9688" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="352.9102"/>
+        <rect fill="#FFFFFF" height="154.9688" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="553.4063"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="1509.832"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="1985.332"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="2460.832"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="2864.0508"/>
+        <rect fill="#FFFFFF" height="2607.4219" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1539.75"
+              y="662.8477"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1547.25"
+              y="2342.7773"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1547.25"
+              y="2745.9961"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1854"
+              y="2239.7227"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1854"
+              y="2642.9414"/>
+        <rect fill="#FFFFFF" height="2215.1836" style="stroke:#A80036;stroke-width:1.5;" width="15" x="2085.75"
+              y="1009.5586"/>
+        <rect fill="#FFFFFF" height="1833.4922" style="stroke:#000000;stroke-width:3.0;" width="1911" x="281.25"
+              y="1189.6406"/>
+        <rect fill="#FFFFFF" height="430.7461" style="stroke:#000000;stroke-width:3.0;" width="1099.5" x="296.25"
+              y="1227.668"/>
+        <rect fill="#FFFFFF" height="475.5" style="stroke:none;stroke-width:1.5;" width="1911" x="281.25"
+              y="1668.9141"/>
+        <rect fill="#FFFFFF" height="430.7461" style="stroke:#000000;stroke-width:3.0;" width="1099.5" x="296.25"
+              y="1703.168"/>
+        <rect fill="#FFFFFF" height="878.7188" style="stroke:none;stroke-width:1.5;" width="1911" x="281.25"
+              y="2144.4141"/>
+        <rect fill="#FFFFFF" height="833.9648" style="stroke:#000000;stroke-width:3.0;" width="1126.5" x="1050.75"
+              y="2178.668"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="128.4141"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="140.25" x2="140.25" y1="128.4141"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="375.75" x2="375.75" y1="959.0742"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="597.75" x2="597.75" y1="895.1602"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="903.75" x2="903.75" y1="411.8672"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="1223.25" x2="1223.25" y1="302.4258"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="1547.25" x2="1547.25" y1="612.3633"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="1860.75" x2="1860.75" y1="767.332"
+              y2="3297.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:5.0,5.0;" x1="2093.25" x2="2093.25" y1="831.2461"
+              y2="3297.2695"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="43.5" x="7.5"
+              y="123.7998">User
+        </text>
+        <ellipse cx="33.75" cy="22.5" fill="#FEFECE" rx="12" ry="12" style="stroke:#A80036;stroke-width:3.0;"/>
+        <path d="M33.75,34.5 L33.75,75 M14.25,46.5 L53.25,46.5 M33.75,75 L14.25,97.5 M33.75,75 L53.25,97.5 " fill="none"
+              style="stroke:#A80036;stroke-width:3.0;"/>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="66" x="107.25" y="79.5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="45" x="117.75"
+              y="111.7998">Main
+        </text>
+        <rect fill="#FFFFFF" height="857.1445" style="stroke:#A80036;stroke-width:1.5;" width="15" x="132.75"
+              y="243.4688"/>
+        <rect fill="#FFFFFF" height="136.582" style="stroke:#A80036;stroke-width:1.5;" width="15" x="132.75"
+              y="3133.6875"/>
+        <rect fill="#FFFFFF" height="2078.6016" style="stroke:#A80036;stroke-width:1.5;" width="15" x="368.25"
+              y="1055.0859"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="591"
+              y="1288.7227"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="591"
+              y="1764.2227"/>
+        <rect fill="#FFFFFF" height="2716.8633" style="stroke:#A80036;stroke-width:1.5;" width="15" x="896.25"
+              y="462.3516"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="903.75"
+              y="1391.7773"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="903.75"
+              y="1867.2773"/>
+        <rect fill="#FFFFFF" height="154.9688" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="352.9102"/>
+        <rect fill="#FFFFFF" height="154.9688" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="553.4063"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="1509.832"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="1985.332"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="2460.832"/>
+        <rect fill="#FFFFFF" height="45.5273" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1215.75"
+              y="2864.0508"/>
+        <rect fill="#FFFFFF" height="2607.4219" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1539.75"
+              y="662.8477"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1547.25"
+              y="2342.7773"/>
+        <rect fill="#FFFFFF" height="209.1094" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1547.25"
+              y="2745.9961"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1854"
+              y="2239.7227"/>
+        <rect fill="#FFFFFF" height="357.6914" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1854"
+              y="2642.9414"/>
+        <rect fill="#FFFFFF" height="2215.1836" style="stroke:#A80036;stroke-width:1.5;" width="15" x="2085.75"
+              y="1009.5586"/>
+        <rect fill="#EEEEEE" height="4.5" style="stroke:#EEEEEE;stroke-width:1.5;" width="2207.25" x="0" y="175.1777"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="175.1777" y2="175.1777"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="179.6777" y2="179.6777"/>
+        <rect fill="#EEEEEE" height="36.5273" style="stroke:#000000;stroke-width:3.0;" width="145.5" x="1030.875"
+              y="158.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="118.5" x="1039.875" y="184.6567">Initialization
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="129.75" x2="114.75" y1="243.4688" y2="237.4688"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="129.75" x2="114.75" y1="243.4688" y2="249.4688"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="33.75" x2="131.25" y1="243.4688" y2="243.4688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="44.25" y="236.1841">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="54" x="60.75"
+              y="236.1841">main()
+        </text>
+        <polygon fill="#A80036" points="1047.75,282.9961,1062.75,288.9961,1047.75,294.9961"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="1056.75" y1="288.9961" y2="288.9961"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="158.25" y="281.7114">2
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="174.75" y="281.7114">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="315" x="1065.75"
+              y="255.4688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="294" x="1076.25"
+              y="287.7686">actor.intermediate.Intermediate
+        </text>
+        <polygon fill="#A80036" points="1197.75,346.9102,1212.75,352.9102,1197.75,358.9102"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="1206.75" y1="352.9102" y2="352.9102"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="158.25" y="345.6255">3
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="132"
+              x="174.75" y="345.6255">runServerSide()
+        </text>
+        <polygon fill="#A80036" points="1067.25,392.4375,1052.25,398.4375,1067.25,404.4375"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1058.25" x2="1214.25" y1="398.4375" y2="398.4375"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="1076.25" y="391.1528">4
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="1092.75" y="391.1528">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="294" x="756.75"
+              y="364.9102"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="273" x="767.25"
+              y="397.21">actor.intermediate.ClientSide
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="911.25" x2="926.25" y1="462.3516" y2="456.3516"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="911.25" x2="926.25" y1="462.3516" y2="468.3516"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="911.25" x2="1214.25" y1="462.3516" y2="462.3516"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="936.75" y="455.0669">5
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="51" x="953.25"
+              y="455.0669">start()
+        </text>
+        <polygon fill="#A80036" points="164.25,501.8789,149.25,507.8789,164.25,513.8789"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="155.25" x2="1221.75" y1="507.8789"
+              y2="507.8789"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="173.25" y="500.5942">6
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="195.75"
+              y="500.5942"/>
+        <polygon fill="#A80036" points="1197.75,547.4063,1212.75,553.4063,1197.75,559.4063"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="1206.75" y1="553.4063" y2="553.4063"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="158.25" y="546.1216">7
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="127.5"
+              x="174.75" y="546.1216">runClientSide()
+        </text>
+        <polygon fill="#A80036" points="1377.75,592.9336,1392.75,598.9336,1377.75,604.9336"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1230.75" x2="1386.75" y1="598.9336" y2="598.9336"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="1241.25" y="591.6489">8
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="1257.75" y="591.6489">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="303" x="1395.75"
+              y="565.4063"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="282" x="1406.25"
+              y="597.7061">actor.intermediate.ServerSide
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1536.75" x2="1521.75" y1="662.8477" y2="656.8477"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1536.75" x2="1521.75" y1="662.8477" y2="668.8477"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1230.75" x2="1538.25" y1="662.8477" y2="662.8477"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="10.5" x="1241.25" y="655.563">9
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="51"
+              x="1257.75" y="655.563">start()
+        </text>
+        <polygon fill="#A80036" points="164.25,702.375,149.25,708.375,164.25,714.375"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="155.25" x2="1221.75" y1="708.375"
+              y2="708.375"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="173.25" y="701.0903">10
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="206.25"
+              y="701.0903"/>
+        <polygon fill="#A80036" points="1695.75,747.9023,1710.75,753.9023,1695.75,759.9023"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="1704.75" y1="753.9023" y2="753.9023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="746.6177">11
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="185.25" y="746.6177">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="295.5" x="1713.75"
+              y="720.375"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="274.5"
+              x="1724.25" y="752.6748">stub.intermediate.ServerSide
+        </text>
+        <polygon fill="#A80036" points="2006.25,811.8164,2021.25,817.8164,2006.25,823.8164"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="2015.25" y1="817.8164" y2="817.8164"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="810.5317">12
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="185.25" y="810.5317">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="138" x="2024.25"
+              y="784.2891"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="117" x="2034.75"
+              y="816.5889">actor.Server
+        </text>
+        <polygon fill="#A80036" points="437.25,875.7305,452.25,881.7305,437.25,887.7305"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="446.25" y1="881.7305" y2="881.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="874.4458">13
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="185.25" y="874.4458">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="286.5" x="455.25"
+              y="848.2031"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="265.5"
+              x="465.75" y="880.5029">stub.intermediate.ClientSide
+        </text>
+        <polygon fill="#A80036" points="293.25,939.6445,308.25,945.6445,293.25,951.6445"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="302.25" y1="945.6445" y2="945.6445"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="938.3599">14
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="100.5"
+              x="185.25" y="938.3599">Constructor
+        </text>
+        <rect fill="#FEFECE" height="47.4141" style="stroke:#A80036;stroke-width:2.25;" width="129" x="311.25"
+              y="912.1172"/>
+        <text fill="#000000" font-family="sans-serif" font-size="21" lengthAdjust="spacing" textLength="108" x="321.75"
+              y="944.417">actor.Client
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="2082.75" x2="2067.75" y1="1009.5586" y2="1003.5586"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="2082.75" x2="2067.75" y1="1009.5586" y2="1015.5586"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="2084.25" y1="1009.5586" y2="1009.5586"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="1002.2739">15
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="51" x="185.25"
+              y="1002.2739">start()
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="365.25" x2="350.25" y1="1055.0859" y2="1049.0859"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="365.25" x2="350.25" y1="1055.0859" y2="1061.0859"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="366.75" y1="1055.0859" y2="1055.0859"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="158.25" y="1047.8013">16
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="51" x="185.25"
+              y="1047.8013">start()
+        </text>
+        <polygon fill="#A80036" points="350.25,1094.6133,365.25,1100.6133,350.25,1106.6133"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="140.25" x2="359.25" y1="1100.6133" y2="1100.6133"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="150.75" y="1093.3286">17
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="42" x="177.75"
+              y="1093.3286">join()
+        </text>
+        <rect fill="#EEEEEE" height="4.5" style="stroke:#EEEEEE;stroke-width:1.5;" width="2207.25" x="0" y="1144.377"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="1144.377" y2="1144.377"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="1148.877" y2="1148.877"/>
+        <rect fill="#EEEEEE" height="36.5273" style="stroke:#000000;stroke-width:3.0;" width="148.5" x="1029.375"
+              y="1127.6133"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="121.5" x="1038.375" y="1153.856">Steady State
+        </text>
+        <path d="M281.25,1189.6406 L380.25,1189.6406 L380.25,1201.6406 L365.25,1216.6406 L281.25,1216.6406 L281.25,1189.6406 "
+              fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="1833.4922" style="stroke:#000000;stroke-width:3.0;" width="1911" x="281.25"
+              y="1189.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="31.5" x="303.75" y="1211.3833">par
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="213" x="402.75" y="1209.769">[Client sending requests]
+        </text>
+        <path d="M296.25,1227.668 L405.75,1227.668 L405.75,1239.668 L390.75,1254.668 L296.25,1254.668 L296.25,1227.668 "
+              fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="430.7461" style="stroke:#000000;stroke-width:3.0;" width="1099.5" x="296.25"
+              y="1227.668"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="42" x="318.75" y="1249.4106">loop
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="207" x="428.25" y="1247.7964">[for request in requests]
+        </text>
+        <polygon fill="#A80036" points="573,1282.7227,588,1288.7227,573,1294.7227"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="383.25" x2="582" y1="1288.7227" y2="1288.7227"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="393.75" y="1281.438">18
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="118.5"
+              x="420.75" y="1281.438">send(request)
+        </text>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="893.25" x2="878.25" y1="1334.25" y2="1328.25"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="893.25" x2="878.25" y1="1334.25" y2="1340.25"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="894.75" y1="1334.25" y2="1334.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="616.5" y="1326.9653">19
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="213" x="643.5"
+              y="1326.9653">&lt;&lt;UDP&gt;&gt; send(request)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="911.25" x2="981.75" y1="1372.2773" y2="1372.2773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="981.75" x2="981.75" y1="1372.2773" y2="1391.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="981.75" y1="1391.7773" y2="1391.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="935.25" y1="1391.7773" y2="1385.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="935.25" y1="1391.7773" y2="1397.7773"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1364.9927">20
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="235.5"
+              x="956.25" y="1364.9927">handle: handleMessage(...)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="918.75" x2="981.75" y1="1444.8047" y2="1444.8047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="981.75" x2="981.75" y1="1444.8047" y2="1464.3047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="981.75" y1="1464.3047" y2="1464.3047"/>
+        <polygon fill="#A80036" points="935.25,1458.3047,920.25,1464.3047,935.25,1470.3047"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1437.52">21
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="118.5"
+              x="956.25" y="1437.52">send(request)
+        </text>
+        <polygon fill="#A80036" points="1197.75,1503.832,1212.75,1509.832,1197.75,1515.832"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="918.75" x2="1206.75" y1="1509.832" y2="1509.832"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1502.5474">22
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="180"
+              x="956.25" y="1502.5474">addRequest(request)
+        </text>
+        <polygon fill="#A80036" points="935.25,1549.3594,920.25,1555.3594,935.25,1561.3594"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="926.25" x2="1221.75" y1="1555.3594"
+              y2="1555.3594"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="944.25" y="1548.0747">23
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="977.25"
+              y="1548.0747"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="621" y1="1600.8867" y2="1594.8867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="621" y1="1600.8867" y2="1606.8867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="894.75" y1="1600.8867" y2="1600.8867"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="631.5" y="1593.6021">24
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="126" x="658.5"
+              y="1593.6021">&lt;&lt;UDP&gt;&gt; ack
+        </text>
+        <polygon fill="#A80036" points="399.75,1640.4141,384.75,1646.4141,399.75,1652.4141"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="390.75" x2="597" y1="1646.4141"
+              y2="1646.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="408.75" y="1639.1294">25
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="441.75"
+              y="1639.1294"/>
+        <line style="stroke:#000000;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="281.25" x2="2192.25" y1="1670.4141"
+              y2="1670.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="252" x="288.75" y="1687.5425">[Client requesting responses]
+        </text>
+        <path d="M296.25,1703.168 L405.75,1703.168 L405.75,1715.168 L390.75,1730.168 L296.25,1730.168 L296.25,1703.168 "
+              fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="430.7461" style="stroke:#000000;stroke-width:3.0;" width="1099.5" x="296.25"
+              y="1703.168"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="42" x="318.75" y="1724.9106">loop
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="147" x="428.25" y="1723.2964">[Until interrupted]
+        </text>
+        <polygon fill="#A80036" points="573,1758.2227,588,1764.2227,573,1770.2227"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="383.25" x2="582" y1="1764.2227" y2="1764.2227"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="393.75" y="1756.938">26
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="54" x="420.75"
+              y="1756.938">send()
+        </text>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="893.25" x2="878.25" y1="1809.75" y2="1803.75"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="893.25" x2="878.25" y1="1809.75" y2="1815.75"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="894.75" y1="1809.75" y2="1809.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="616.5" y="1802.4653">27
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="148.5"
+              x="643.5" y="1802.4653">&lt;&lt;UDP&gt;&gt; send()
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="911.25" x2="981.75" y1="1847.7773" y2="1847.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="981.75" x2="981.75" y1="1847.7773" y2="1867.2773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="981.75" y1="1867.2773" y2="1867.2773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="935.25" y1="1867.2773" y2="1861.2773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="935.25" y1="1867.2773" y2="1873.2773"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1840.4927">28
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="235.5"
+              x="956.25" y="1840.4927">handle: handleMessage(...)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="918.75" x2="981.75" y1="1920.3047" y2="1920.3047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="981.75" x2="981.75" y1="1920.3047" y2="1939.8047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="920.25" x2="981.75" y1="1939.8047" y2="1939.8047"/>
+        <polygon fill="#A80036" points="935.25,1933.8047,920.25,1939.8047,935.25,1945.8047"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1913.02">29
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="54" x="956.25"
+              y="1913.02">send()
+        </text>
+        <polygon fill="#A80036" points="1197.75,1979.332,1212.75,1985.332,1197.75,1991.332"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="918.75" x2="1206.75" y1="1985.332" y2="1985.332"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="929.25" y="1978.0474">30
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="126"
+              x="956.25" y="1978.0474">getResponse()
+        </text>
+        <polygon fill="#A80036" points="935.25,2024.8594,920.25,2030.8594,935.25,2036.8594"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="926.25" x2="1221.75" y1="2030.8594"
+              y2="2030.8594"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="944.25" y="2023.5747">31
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="977.25"
+              y="2023.5747"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="621" y1="2076.3867" y2="2070.3867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="621" y1="2076.3867" y2="2082.3867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="606" x2="894.75" y1="2076.3867" y2="2076.3867"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="631.5" y="2069.1021">32
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="174" x="658.5"
+              y="2069.1021">&lt;&lt;UDP&gt;&gt; message
+        </text>
+        <polygon fill="#A80036" points="399.75,2115.9141,384.75,2121.9141,399.75,2127.9141"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="390.75" x2="597" y1="2121.9141"
+              y2="2121.9141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="408.75" y="2114.6294">33
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="79.5"
+              x="435.75" y="2114.6294">message
+        </text>
+        <line style="stroke:#000000;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="281.25" x2="2192.25" y1="2145.9141"
+              y2="2145.9141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="447" x="288.75" y="2163.0425">[Server requesting requests and sending responses]
+        </text>
+        <path d="M1050.75,2178.668 L1160.25,2178.668 L1160.25,2190.668 L1145.25,2205.668 L1050.75,2205.668 L1050.75,2178.668 "
+              fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="833.9648" style="stroke:#000000;stroke-width:3.0;" width="1126.5" x="1050.75"
+              y="2178.668"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="42" x="1073.25" y="2200.4106">loop
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="16.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="126" x="1182.75" y="2198.7964">[Until interrupt]
+        </text>
+        <polygon fill="#A80036" points="1885.5,2233.7227,1870.5,2239.7227,1885.5,2245.7227"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1876.5" x2="2084.25" y1="2239.7227" y2="2239.7227"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1894.5" y="2232.438">34
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="54" x="1921.5"
+              y="2232.438">send()
+        </text>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1569.75" y1="2285.25" y2="2279.25"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1569.75" y1="2285.25" y2="2291.25"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1852.5" y1="2285.25" y2="2285.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1580.25" y="2277.9653">35
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="148.5"
+              x="1607.25" y="2277.9653">&lt;&lt;UDP&gt;&gt; send()
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1554.75" x2="1625.25" y1="2323.2773" y2="2323.2773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1625.25" x2="1625.25" y1="2323.2773" y2="2342.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1625.25" y1="2342.7773" y2="2342.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1578.75" y1="2342.7773" y2="2336.7773"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1578.75" y1="2342.7773" y2="2348.7773"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1572.75" y="2315.9927">36
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="235.5"
+              x="1599.75" y="2315.9927">handle: handleMessage(...)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1562.25" x2="1625.25" y1="2395.8047" y2="2395.8047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1625.25" x2="1625.25" y1="2395.8047" y2="2415.3047"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1625.25" y1="2415.3047" y2="2415.3047"/>
+        <polygon fill="#A80036" points="1578.75,2409.3047,1563.75,2415.3047,1578.75,2421.3047"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1572.75" y="2388.52">37
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="54"
+              x="1599.75" y="2388.52">send()
+        </text>
+        <polygon fill="#A80036" points="1247.25,2454.832,1232.25,2460.832,1247.25,2466.832"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1238.25" x2="1545.75" y1="2460.832" y2="2460.832"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1256.25" y="2453.5474">38
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="111"
+              x="1283.25" y="2453.5474">getRequest()
+        </text>
+        <polygon fill="#A80036" points="1529.25,2500.3594,1544.25,2506.3594,1529.25,2512.3594"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="1223.25" x2="1538.25" y1="2506.3594"
+              y2="2506.3594"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1233.75" y="2499.0747">39
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="0" x="1266.75"
+              y="2499.0747"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1851" x2="1836" y1="2551.8867" y2="2545.8867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1851" x2="1836" y1="2551.8867" y2="2557.8867"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1852.5" y1="2551.8867" y2="2551.8867"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1565.25" y="2544.6021">40
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="174"
+              x="1592.25" y="2544.6021">&lt;&lt;UDP&gt;&gt; message
+        </text>
+        <polygon fill="#A80036" points="2067.75,2591.4141,2082.75,2597.4141,2067.75,2603.4141"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="1861.5" x2="2076.75" y1="2597.4141"
+              y2="2597.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1872" y="2590.1294">41
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="79.5" x="1899"
+              y="2590.1294">message
+        </text>
+        <polygon fill="#A80036" points="1885.5,2636.9414,1870.5,2642.9414,1885.5,2648.9414"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1876.5" x2="2084.25" y1="2642.9414" y2="2642.9414"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1894.5" y="2635.6567">42
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="133.5"
+              x="1921.5" y="2635.6567">send(response)
+        </text>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1569.75" y1="2688.4688" y2="2682.4688"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1569.75" y1="2688.4688" y2="2694.4688"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1852.5" y1="2688.4688" y2="2688.4688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1580.25" y="2681.1841">43
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="228"
+              x="1607.25" y="2681.1841">&lt;&lt;UDP&gt;&gt; send(response)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1554.75" x2="1625.25" y1="2726.4961" y2="2726.4961"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1625.25" x2="1625.25" y1="2726.4961" y2="2745.9961"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1625.25" y1="2745.9961" y2="2745.9961"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1578.75" y1="2745.9961" y2="2739.9961"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1578.75" y1="2745.9961" y2="2751.9961"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold" lengthAdjust="spacing"
+              textLength="21" x="1572.75" y="2719.2114">44
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" lengthAdjust="spacing" textLength="235.5"
+              x="1599.75" y="2719.2114">handle: handleMessage(...)
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1562.25" x2="1625.25" y1="2799.0234" y2="2799.0234"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1625.25" x2="1625.25" y1="2799.0234" y2="2818.5234"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1563.75" x2="1625.25" y1="2818.5234" y2="2818.5234"/>
+        <polygon fill="#A80036" points="1578.75,2812.5234,1563.75,2818.5234,1578.75,2824.5234"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="1572.75" y="2791.7388">45
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="144"
+              x="1599.75" y="2791.7388">send(responses)
+        </text>
+        <polygon fill="#A80036" points="1247.25,2858.0508,1232.25,2864.0508,1247.25,2870.0508"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1238.25" x2="1545.75" y1="2864.0508" y2="2864.0508"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="1256.25" y="2856.7661">46
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="210"
+              x="1283.25" y="2856.7661">addResponse(response)
+        </text>
+        <polygon fill="#A80036" points="1529.25,2903.5781,1544.25,2909.5781,1529.25,2915.5781"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="1223.25" x2="1538.25" y1="2909.5781"
+              y2="2909.5781"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="1233.75" y="2902.2935">47
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="0" x="1266.75"
+              y="2902.2935"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1851" x2="1836" y1="2955.1055" y2="2949.1055"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1851" x2="1836" y1="2955.1055" y2="2961.1055"/>
+        <line style="stroke:#0000FF;stroke-width:1.5;" x1="1554.75" x2="1852.5" y1="2955.1055" y2="2955.1055"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="1565.25" y="2947.8208">48
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="126"
+              x="1592.25" y="2947.8208">&lt;&lt;UDP&gt;&gt; ack
+        </text>
+        <polygon fill="#A80036" points="2067.75,2994.6328,2082.75,3000.6328,2067.75,3006.6328"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="1861.5" x2="2076.75" y1="3000.6328"
+              y2="3000.6328"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="1872" y="2993.3481">49
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="0" x="1905"
+              y="2993.3481"/>
+        <rect fill="#EEEEEE" height="4.5" style="stroke:#EEEEEE;stroke-width:1.5;" width="2207.25" x="0" y="3065.3965"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="3065.3965" y2="3065.3965"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="0" x2="2207.25" y1="3069.8965" y2="3069.8965"/>
+        <rect fill="#EEEEEE" height="36.5273" style="stroke:#000000;stroke-width:3.0;" width="142.5" x="1032.375"
+              y="3048.6328"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="115.5" x="1041.375" y="3074.8755">Termination
+        </text>
+        <polygon fill="#A80036" points="164.25,3127.6875,149.25,3133.6875,164.25,3139.6875"
+                 style="stroke:#A80036;stroke-width:1.5;"/>
+        <line style="stroke:#A80036;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="155.25" x2="374.25" y1="3133.6875"
+              y2="3133.6875"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="173.25" y="3126.4028">50
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="0" x="206.25"
+              y="3126.4028"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="900.75" x2="885.75" y1="3179.2148" y2="3173.2148"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="900.75" x2="885.75" y1="3179.2148" y2="3185.2148"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="902.25" y1="3179.2148" y2="3179.2148"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="158.25" y="3171.9302">51
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="82.5"
+              x="185.25" y="3171.9302">interrupt()
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="2090.25" x2="2075.25" y1="3224.7422" y2="3218.7422"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="2090.25" x2="2075.25" y1="3224.7422" y2="3230.7422"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="147.75" x2="2091.75" y1="3224.7422" y2="3224.7422"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="158.25" y="3217.4575">52
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="82.5"
+              x="185.25" y="3217.4575">interrupt()
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1544.25" x2="1529.25" y1="3270.2695" y2="3264.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="1544.25" x2="1529.25" y1="3270.2695" y2="3276.2695"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="140.25" x2="1545.75" y1="3270.2695" y2="3270.2695"/>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" font-weight="bold"
+              textLength="21" x="150.75" y="3262.9849">53
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="19.5" textLength="82.5"
+              x="177.75" y="3262.9849">interrupt()
+        </text><!--MD5=[02bbd810e64dbaefcacba40496e9ad13]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam style strictuml
+
+actor User
+participant Main
+box Client #LightGreen
+participant actor.Client as Client
+participant stub.intermediate.ClientSide as sic
+end box
+box Intermediate #LightBlue
+participant actor.intermediate.ClientSide as aic
+participant actor.intermediate.Intermediate as Intermediate
+participant actor.intermediate.ServerSide as ais
+end box
+box Server #LightCoral
+participant stub.intermediate.ServerSide as sis
+participant actor.Server as Server
+end box
+
+autonumber
+
+
+== Initialization ==
+User ->> Main ++: main()
+Main -> Intermediate **: Constructor
+
+Main -> Intermediate ++: runServerSide()
+Intermediate -> aic **: Constructor
+Intermediate ->> aic: start()
+activate aic
+Intermediate - -> Main
+deactivate Intermediate
+
+Main -> Intermediate ++: runClientSide()
+Intermediate -> ais **: Constructor
+Intermediate ->> ais : start()
+activate ais
+Intermediate - -> Main
+deactivate Intermediate
+
+Main -> sis **: Constructor
+Main -> Server **: Constructor
+
+Main -> sic **: Constructor
+Main -> Client **: Constructor
+
+Main ->> Server: start()
+activate Server
+
+Main ->> Client: start()
+activate Client
+
+Main -> Client: join()
+deactivate Main
+
+== Steady State ==
+
+par Client sending requests
+   loop for request in requests
+        Client -> sic ++: send(request)
+        sic -[#0000FF]>> aic: <<UDP>> send(request)
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send(request)
+        aic -> Intermediate ++: addRequest(request)
+        return
+        aic -[#0000FF]>> sic: <<UDP>> ack
+        deactivate aic
+        return
+   end
+
+  else Client requesting responses
+  loop Until interrupted
+        Client -> sic ++: send()
+        sic -[#0000FF]>> aic: <<UDP>> send()
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send()
+        aic -> Intermediate ++: getResponse()
+        return
+        aic -[#0000FF]>> sic: <<UDP>> message
+        deactivate aic
+        return message
+  end
+
+  else Server requesting requests and sending responses
+  loop Until interrupt
+        Server -> sis ++: send()
+        sis -[#0000FF]>> ais: <<UDP>> send()
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send()
+        ais -> Intermediate ++: getRequest()
+        return
+        ais -[#0000FF]>> sis: <<UDP>> message
+        deactivate ais
+        return message
+        Server -> sis ++: send(response)
+        sis -[#0000FF]>> ais: <<UDP>> send(response)
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send(responses)
+        ais -> Intermediate ++: addResponse(response)
+        return
+        ais -[#0000FF]>> sis: <<UDP>> ack
+        deactivate ais
+        return
+    end
+end
+
+== Termination ==
+
+Client - -> Main
+deactivate Client
+activate Main
+
+Main ->> aic: interrupt()
+deactivate aic
+
+Main ->> Server: interrupt()
+deactivate Server
+
+Main ->> ais: interrupt()
+deactivate ais
+
+deactivate Main
+
+@enduml
+
+@startuml
+
+skinparam style strictuml
+
+actor User
+participant Main
+box Client #LightGreen
+participant actor.Client as Client
+participant stub.intermediate.ClientSide as sic
+end box
+box Intermediate #LightBlue
+participant actor.intermediate.ClientSide as aic
+participant actor.intermediate.Intermediate as Intermediate
+participant actor.intermediate.ServerSide as ais
+end box
+box Server #LightCoral
+participant stub.intermediate.ServerSide as sis
+participant actor.Server as Server
+end box
+
+autonumber
+
+
+== Initialization ==
+User ->> Main ++: main()
+Main -> Intermediate **: Constructor
+
+Main -> Intermediate ++: runServerSide()
+Intermediate -> aic **: Constructor
+Intermediate ->> aic: start()
+activate aic
+Intermediate - -> Main
+deactivate Intermediate
+
+Main -> Intermediate ++: runClientSide()
+Intermediate -> ais **: Constructor
+Intermediate ->> ais : start()
+activate ais
+Intermediate - -> Main
+deactivate Intermediate
+
+Main -> sis **: Constructor
+Main -> Server **: Constructor
+
+Main -> sic **: Constructor
+Main -> Client **: Constructor
+
+Main ->> Server: start()
+activate Server
+
+Main ->> Client: start()
+activate Client
+
+Main -> Client: join()
+deactivate Main
+
+== Steady State ==
+
+par Client sending requests
+   loop for request in requests
+        Client -> sic ++: send(request)
+        sic -[#0000FF]>> aic: <<UDP>> send(request)
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send(request)
+        aic -> Intermediate ++: addRequest(request)
+        return
+        aic -[#0000FF]>> sic: <<UDP>> ack
+        deactivate aic
+        return
+   end
+
+  else Client requesting responses
+  loop Until interrupted
+        Client -> sic ++: send()
+        sic -[#0000FF]>> aic: <<UDP>> send()
+        aic ->> aic: handle: handleMessage(...)
+        activate  aic
+        aic  -> aic: send()
+        aic -> Intermediate ++: getResponse()
+        return
+        aic -[#0000FF]>> sic: <<UDP>> message
+        deactivate aic
+        return message
+  end
+
+  else Server requesting requests and sending responses
+  loop Until interrupt
+        Server -> sis ++: send()
+        sis -[#0000FF]>> ais: <<UDP>> send()
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send()
+        ais -> Intermediate ++: getRequest()
+        return
+        ais -[#0000FF]>> sis: <<UDP>> message
+        deactivate ais
+        return message
+        Server -> sis ++: send(response)
+        sis -[#0000FF]>> ais: <<UDP>> send(response)
+        ais ->> ais: handle: handleMessage(...)
+        activate  ais
+        ais  -> ais: send(responses)
+        ais -> Intermediate ++: addResponse(response)
+        return
+        ais -[#0000FF]>> sis: <<UDP>> ack
+        deactivate ais
+        return
+    end
+end
+
+== Termination ==
+
+Client - -> Main
+deactivate Client
+activate Main
+
+Main ->> aic: interrupt()
+deactivate aic
+
+Main ->> Server: interrupt()
+deactivate Server
+
+Main ->> ais: interrupt()
+deactivate ais
+
+deactivate Main
+
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 02:55:08 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+-->
+    </g>
+</svg>

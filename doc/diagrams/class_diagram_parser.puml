@@ -1,0 +1,87 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class model.BadRequest extends model.Request{
+ + BadRequest(boolean read, String filename, String mode)
+ - byte[] getEncoded(int maxMessageSize)
+}
+
+abstract class model.State{
+ # Request.Parser Parser
+ # State(Request.Parser Parser)
+ {abstract} + void handle(byte b)
+}
+abstract class model.StringState extends model.State{
+ # ByteArrayOutputStream output
+ # StringState(Request.Parser Parser)
+ {abstract} # void nextState(String output)
+ + void handle(byte b)
+}
+class model.InitialState extends model.State{
+ + InitialState(Request.Parser Parser)
+ + void handle(byte b)
+}
+class model.TypeState extends model.State{
+ + TypeState(Request.Parser Parser)
+ + void handle(byte b)
+}
+class model.FilenameState extends model.StringState{
+ + FilenameState(Request.Parser Parser)
+ # void nextState(String output)
+ + void handle(byte b)
+}
+class model.ModeState extends model.StringState{
+ + ModeState(Request.Parser Parser)
+ # void nextState(String output)
+ + void handle(byte b)
+}
+class model.EndState extends model.State{
+ + EndState(Request.Parser Parser)
+ + void handle(byte b)
+}
+
+
+class model.Request{
+ - boolean read
+ - String filename
+ - String mode
+ + Request(boolean read, String filename, String mode)
+ {static} + Request fromEncoded(byte[] bytes)
+ - void writeObject(ObjectOutputStream out)
+ - void readObject(ObjectInputStream in)
+ + byte[] getEncoded(int maxMessageSize)
+ + boolean isRead()
+ + String toString()
+ + boolean equals(Object o)
+ + int hashCode()
+}
+class model.Request.Parser{
+ - boolean read
+ - String filename
+ - String mode
+ - State state
+ + Parser()
+ + void setRead(boolean read)
+ + void setFilename(String filename)
+ + void setMode(String mode)
+ + Request build()
+ + State getState()
+ + void setState(State state)
+}
+
+model.Request +-- model.Request.Parser
+
+
+model.Request.Parser "1" *-- "1" model.State
+model.State "1" *-- "1" model.Request.Parser
+
+model.Request.Parser ..> model.Request: "<<create>>"
+model.Request ..> model.Request.Parser: "<<create>>"
+
+model.Request.Parser ..> model.InitialState: "<<create>>"
+model.InitialState ..> model.TypeState: "<<create>>"
+model.TypeState ..> model.FilenameState: "<<create>>"
+model.FilenameState ..> model.ModeState: "<<create>>"
+model.ModeState ..> model.EndState: "<<create>>"
+
+@enduml

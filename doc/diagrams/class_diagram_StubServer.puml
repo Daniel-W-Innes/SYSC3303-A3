@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class stub.StubServer{
+    {static} + void receiveAsync(DatagramSocket datagramSocket, int numHandlerThreads, int maxMessageSize, Map<Integer, Function<List<Serializable>, Serializable>> callbacks)
+    {static} + void handleMessage(InetAddress inetAddress, int port, byte[] data, Map<Integer, Function<List<Serializable>, Serializable>> callbacks)
+}
+
+@enduml

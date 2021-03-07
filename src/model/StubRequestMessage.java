@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 /**
- * Representation of a function call to be use in stub.
+ * Representation of a function call to be use in a stub.
  */
 public class StubRequestMessage implements Serializable {
     /**

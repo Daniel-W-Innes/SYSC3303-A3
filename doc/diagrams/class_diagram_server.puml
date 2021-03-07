@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+!include class_diagram_ServerSideApi.puml
+!include class_diagram_parser.puml
+!include class_diagram_StubClient.puml
+
+
+class stub.intermediate.ServerSide implements actor.intermediate.ServerSideApi{
+    - InetAddress inetAddress
+    - int port
+    + ServerSide(Config config, InetAddress inetAddress, int port)
+}
+
+stub.intermediate.ServerSide "1" *-- "1" InetAddress
+stub.intermediate.ServerSide --|> stub.StubClient
+
+class actor.Server implements Runnable{
+    - Logger logger
+    - ServerSideApi serverSide
+    + Server(ServerSideApi serverSide)
+    + void main(String[] args)
+}
+
+actor.Server ..> model.Response: "<<create>>"
+actor.Server "1" *-- "1" actor.intermediate.ServerSideApi
+actor.Server "1" *-- "1" Logger
+
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class stub.StubClient{
+    # Config config
+    # StubClient(Config config)
+    # <T> T sendAndReceive(int functionNumber, InetAddress inetAddress, int port)
+    # <T> T sendAndReceive(int functionNumber, Serializable argument, InetAddress inetAddress, int port)
+    # <T> T sendAndReceive(int functionNumber, List<Serializable> arguments, InetAddress inetAddress, int port)
+    # <T> T sendAndReceive(StubRequestMessage stubRequestMessage, InetAddress inetAddress, int port)
+    # byte[] sendAndReceive(byte[] data, InetAddress inetAddress, int port)
+    # byte[] sendAndReceive(DatagramSocket datagramSocket, byte[] data, InetAddress inetAddress, int port)
+}
+
+@enduml

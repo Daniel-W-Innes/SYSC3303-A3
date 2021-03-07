@@ -5,8 +5,6 @@ import java.util.Properties;
 
 /**
  * The configuration file loader. Loads the properties from a given CONFIG_FILE_NAME.
- *
- * @version Feb 27, 2021
  */
 public class Config {
     /**

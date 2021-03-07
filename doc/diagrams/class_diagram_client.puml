@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+!include class_diagram_ClientSideApi.puml
+!include class_diagram_parser.puml
+!include class_diagram_config.puml
+!include  class_diagram_StubClient.puml
+
+
+class stub.intermediate.ClientSide implements actor.intermediate.ClientSideApi{
+    - InetAddress inetAddress
+    - int port
+    + ClientSide(Config config, InetAddress inetAddress, int port)
+}
+
+stub.intermediate.ClientSide "1" *-- "1" InetAddress
+stub.intermediate.ClientSide --|> stub.StubClient
+
+class actor.Client implements Runnable{
+    - Logger logger
+    - Queue<Request> requests
+    - ClientSideApi clientSide
+    - Config config
+    + Client(Config config, ClientSideApi clientSide, Queue<Request> requests)
+    + Client(Config config, ClientSideApi clientSide)
+    {static} + Queue<Request> getDefaultRequests()
+    + void main(String[] args)
+}
+
+actor.Client "1" *-- "*" model.Request
+actor.Client ..> model.Request: "<<create>>"
+actor.Client "*" *-- "1" util.Config
+actor.Client "1" *-- "1" actor.intermediate.ClientSideApi
+actor.Client "1" *-- "1" Logger
+
+@enduml

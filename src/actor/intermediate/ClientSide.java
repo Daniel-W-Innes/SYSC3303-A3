@@ -5,6 +5,7 @@ import model.Message;
 import model.Request;
 import model.Response;
 import stub.StubServer;
+import util.Config;
 
 import java.io.IOException;
 import java.net.DatagramSocket;
@@ -21,6 +22,10 @@ public class ClientSide extends Thread implements ClientSideApi {
      */
     private final Intermediate intermediate;
     /**
+     * The application configuration file loader.
+     */
+    private final Config config;
+    /**
      * The socket to receive with.
      */
     private final DatagramSocket socket;
@@ -28,13 +33,14 @@ public class ClientSide extends Thread implements ClientSideApi {
     /**
      * The default intermediate client side constructor.
      *
-     * @param port         The port for the client side.
+     * @param config       The application configuration file loader.
      * @param intermediate The intermediate.
      * @throws SocketException If the the client side fails to bind the socket.
      */
-    public ClientSide(int port, Intermediate intermediate) throws SocketException {
+    public ClientSide(Config config, Intermediate intermediate) throws SocketException {
+        this.config = config;
         this.intermediate = intermediate;
-        socket = new DatagramSocket(port);
+        socket = new DatagramSocket(config.getIntProperty("intermediateClientSidePort"));
     }
 
     @Override
@@ -44,7 +50,7 @@ public class ClientSide extends Thread implements ClientSideApi {
 
     @Override
     public Message send() {
-        Optional<Response> response = intermediate.getResponses();
+        Optional<Response> response = intermediate.getResponse();
         if (response.isPresent()) {
             return response.get();
         } else {
@@ -55,7 +61,7 @@ public class ClientSide extends Thread implements ClientSideApi {
     @Override
     public void run() {
         try {
-            StubServer.receiveAsync(socket, 1024, Map.of(
+            StubServer.receiveAsync(socket, config.getIntProperty("numHandlerThreads"), config.getIntProperty("maxMessageSize"), Map.of(
                     1, (input) -> {
                         send((Request) input.get(0));
                         return new AckMessage();

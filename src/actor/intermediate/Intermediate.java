@@ -25,7 +25,6 @@ public class Intermediate {
      */
     private final Config config;
 
-
     /**
      * The default intermediate constructor.
      *
@@ -69,7 +68,7 @@ public class Intermediate {
      *
      * @return A optional Potentially containing a response.
      */
-    public Optional<Response> getResponses() {
+    public Optional<Response> getResponse() {
         return Optional.ofNullable(responses.poll());
     }
 
@@ -80,7 +79,7 @@ public class Intermediate {
      * @throws SocketException If the the client side fails to bind the socket.
      */
     public ClientSide runClientSide() throws SocketException {
-        ClientSide clientSide = new ClientSide(config.getIntProperty("intermediateClientSidePort"), this);
+        ClientSide clientSide = new ClientSide(config, this);
         clientSide.start();
         return clientSide;
     }
@@ -92,7 +91,7 @@ public class Intermediate {
      * @throws SocketException If the the server side fails to bind the socket.
      */
     public ServerSide runServerSide() throws SocketException {
-        ServerSide serverSide = new ServerSide(config.getIntProperty("intermediateServerSidePort"), this);
+        ServerSide serverSide = new ServerSide(config, this);
         serverSide.start();
         return serverSide;
     }

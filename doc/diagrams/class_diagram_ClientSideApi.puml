@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface actor.intermediate.ClientSideApi{
+    + void send(Request request)
+    + Message send()
+}
+
+@enduml

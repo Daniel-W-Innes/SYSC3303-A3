@@ -1,0 +1,71 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+!include class_diagram_ClientSideApi.puml
+!include class_diagram_ServerSideApi.puml
+!include class_diagram_parser.puml
+!include class_diagram_config.puml
+!include class_diagram_Response.puml
+!include class_diagram_StubServer.puml
+
+class actor.intermediate.ClientSide implements actor.intermediate.ClientSideApi{
+    - Intermediate intermediate
+    - Config config
+    - DatagramSocket socket
+    + ClientSide(Config config, Intermediate intermediate)
+    + void run()
+    + void interrupt()
+}
+
+actor.intermediate.ClientSide "1" *-- "1" util.Config
+actor.intermediate.ClientSide "1" *-- "1" DatagramSocket
+actor.intermediate.ClientSide ..> stub.StubServer
+
+class actor.intermediate.ServerSide implements actor.intermediate.ServerSideApi {
+    - Intermediate intermediate
+    - Config config
+    - DatagramSocket socket
+    + ServerSide(Config config, Intermediate intermediate)
+    + void run()
+    + void interrupt()
+}
+
+actor.intermediate.ServerSide "1" *-- "1" util.Config
+actor.intermediate.ServerSide "1" *-- "1" DatagramSocket
+actor.intermediate.ServerSide ..> stub.StubServer
+
+class actor.intermediate.Intermediate{
+    - ConcurrentLinkedQueue<Request> requests
+    - ConcurrentLinkedQueue<Response> responses
+    - Config config
+    + Intermediate(Config config)
+    + void addRequest(Request request)
+    + void addResponse(Response response)
+    + Optional<Request> getRequest()
+    + Optional<Response> getResponse()
+}
+
+actor.intermediate.Intermediate "1" *-- "1" util.Config
+
+actor.intermediate.ClientSide "1" *-- "1" actor.intermediate.Intermediate
+actor.intermediate.ServerSide "1" *-- "1" actor.intermediate.Intermediate
+
+actor.intermediate.Intermediate "1" *-- "*" model.Response
+actor.intermediate.Intermediate "1" *-- "*" model.Request
+
+actor.intermediate.ClientSide --|> Thread
+actor.intermediate.ServerSide --|> Thread
+
+class actor.intermediate.Main{
+    {static} + void main(String[] args)
+}
+
+
+actor.intermediate.Intermediate ..> actor.intermediate.ClientSide: "<<create>>"
+actor.intermediate.Intermediate ..> actor.intermediate.ServerSide: "<<create>>"
+
+actor.intermediate.Main ..> actor.intermediate.ClientSide: "<<create>>"
+actor.intermediate.Main ..> actor.intermediate.ServerSide: "<<create>>"
+
+
+@enduml
